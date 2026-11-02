@@ -1,25 +1,25 @@
 class Meiose < Formula
-  desc "A context-trimming proxy for MCP servers: smaller tool outputs for AI agents, originals one call away"
+  desc "An MCP proxy that trims oversized tool outputs before they reach your agent"
   homepage "https://github.com/yousufmohi/meiose"
-  version "0.1.1"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/yousufmohi/meiose/releases/download/v0.1.1/meiose-aarch64-apple-darwin.tar.xz"
-      sha256 "a8c50976022c55daedcbabd3fea3634edf934328fef0d99d0e6f89ba4041349a"
+      url "https://github.com/yousufmohi/meiose/releases/download/v0.2.0/meiose-aarch64-apple-darwin.tar.xz"
+      sha256 "5d462f789e29f679b9f3bc8d8003a5be84ad83525136603fd0011a4679f28bd7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/yousufmohi/meiose/releases/download/v0.1.1/meiose-x86_64-apple-darwin.tar.xz"
-      sha256 "51916bf5630e933de048c5eab651beaec531680e88c49a1bbef5eef4cc9a4be0"
+      url "https://github.com/yousufmohi/meiose/releases/download/v0.2.0/meiose-x86_64-apple-darwin.tar.xz"
+      sha256 "b7e65512a4deed45ce2e5f77c3d5a3db5df4cee8a4ff7b6d602739b51417f6dc"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/yousufmohi/meiose/releases/download/v0.1.1/meiose-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "3cacc00ecbdf0554d36b39dda1c2e943c5e4a1d4371480baaf2991bf7e572256"
+      url "https://github.com/yousufmohi/meiose/releases/download/v0.2.0/meiose-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "7af99ec2dbbc74c2dbdfcb6267ae82ed6b8ef45cac0d2d1d69837b76303a1497"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/yousufmohi/meiose/releases/download/v0.1.1/meiose-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e9287b88c2947234b239fe40e268cf7e5bef652fa7ec461eda8441d48e3e7ade"
+      url "https://github.com/yousufmohi/meiose/releases/download/v0.2.0/meiose-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "2d26ee0c1e9e0eb1aee89e6c3da0e0abd7778ddb20865cf7833afbcab231842c"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
