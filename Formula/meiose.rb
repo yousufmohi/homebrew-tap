@@ -1,25 +1,25 @@
 class Meiose < Formula
   desc "An MCP proxy that trims oversized tool outputs before they reach your agent"
   homepage "https://github.com/yousufmohi/meiose"
-  version "0.2.2"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/yousufmohi/meiose/releases/download/v0.2.2/meiose-aarch64-apple-darwin.tar.xz"
-      sha256 "01c9ec65f99c40836af946741152decee38b0960f294129dc0327e3883204f0a"
+      url "https://github.com/yousufmohi/meiose/releases/download/v0.3.0/meiose-aarch64-apple-darwin.tar.xz"
+      sha256 "73570020e473ed0e724b81718647f8cb25dc959669c9c3c3b6f6f99c9dc2ce8e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/yousufmohi/meiose/releases/download/v0.2.2/meiose-x86_64-apple-darwin.tar.xz"
-      sha256 "baa9aaac60b5ab21a9ed9a3bf9478391ce968f4b42b00a4ec96ce09880589e42"
+      url "https://github.com/yousufmohi/meiose/releases/download/v0.3.0/meiose-x86_64-apple-darwin.tar.xz"
+      sha256 "26d66f41aafc00e30373655732f75cda523dc99afe4445401c5529da5f1c157a"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/yousufmohi/meiose/releases/download/v0.2.2/meiose-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "2685335aba55224ee39f0c296c7c0f9036fdf5a32c7f3feff10809dc57ce7bdf"
+      url "https://github.com/yousufmohi/meiose/releases/download/v0.3.0/meiose-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "cab3b101fb3d92bf8db28d0930a9cd9541f3706e5e16bfd29c337c1bf7741e69"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/yousufmohi/meiose/releases/download/v0.2.2/meiose-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "bd5d84cc282eb77a87dcc00cc5b594c5c7ffd6f3ac16e76c1387d28c690e1855"
+      url "https://github.com/yousufmohi/meiose/releases/download/v0.3.0/meiose-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "e4c5b301f98399dd7fbeda51aa335cce50c92b1009d8c3c5eff9204ac5e23d49"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
